@@ -1,0 +1,321 @@
+<?xml version = "1.0.1" encoding = "utf-8"?>
+
+<aiml>
+
+    <category>
+       <pattern> * </pattern>
+       <template>null</template>
+    </category>
+    
+    
+    <category>
+        <pattern>打印机 卡纸</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+         <pattern>* 打印机 卡纸</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 卡纸</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 卡纸</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 卡纸 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 卡纸 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 卡纸 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 卡纸 *</pattern>
+        <template>hardware</template>
+    </category>
+
+
+    <category>
+        <pattern>打印机 墨盒</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+         <pattern>* 打印机 墨盒</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 墨盒</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 墨盒</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 墨盒 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 墨盒 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 墨盒 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 墨盒 *</pattern>
+        <template>hardware</template>
+    </category>
+
+
+    <category>
+        <pattern>打印机 晒鼓</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+         <pattern>* 打印机 晒鼓</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 墨盒</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 晒鼓</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 晒鼓 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 晒鼓 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 晒鼓 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 晒鼓 *</pattern>
+        <template>hardware</template>
+    </category>
+
+
+
+    <category>
+        <pattern>打印机 脱机</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+         <pattern>* 打印机 脱机</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 脱机</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 脱机</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 脱机 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 脱机 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 脱机 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 脱机 *</pattern>
+        <template>hardware</template>
+    </category>
+
+
+
+    <category>
+        <pattern>打印机 驱动</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+         <pattern>* 打印机 驱动</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 驱动</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 驱动</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 驱动 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 驱动 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 驱动 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 驱动 *</pattern>
+        <template>hardware</template>
+    </category>
+
+
+
+    <category>
+        <pattern>打印机 扫描</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+         <pattern>* 打印机 扫描</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 扫描</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 扫描</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 扫描 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 扫描 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 扫描 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 扫描 *</pattern>
+        <template>hardware</template>
+    </category>
+
+
+    <category>
+        <pattern>打印机 网络</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+         <pattern>* 打印机 网络</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 网络</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 网络</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 网络 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 网络 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 网络 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 网络 *</pattern>
+        <template>hardware</template>
+    </category>
+
+
+    <category>
+        <pattern>打印机 清灰</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+         <pattern>* 打印机 清灰</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 清灰</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 清灰</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 清灰 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 清灰 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 清灰 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 清灰 *</pattern>
+        <template>hardware</template>
+    </category>
+
+
+    <category>
+        <pattern>打印机 高 拍仪</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+         <pattern>* 打印机 高 拍仪</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 高 拍仪</pattern>
+         <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 高 拍仪</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 高 拍仪 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 高 拍仪 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>打印机 * 高 拍仪 *</pattern>
+        <template>hardware</template>
+    </category>
+    <category>
+        <pattern>* 打印机 * 高 拍仪 *</pattern>
+        <template>hardware</template>
+    </category>
+
+    
+
+</aiml>

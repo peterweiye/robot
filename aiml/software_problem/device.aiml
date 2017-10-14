@@ -1,0 +1,27 @@
+<?xml version = "1.0.1" encoding = "utf-8"?>
+
+<aiml>
+
+  <category>
+    <pattern> * </pattern>
+    <template>null</template>
+  </category>
+
+  <category>
+    <pattern> * 打印机 * </pattern>
+    <template>打印机 printer</template>
+  </category>
+  <category>
+    <pattern> 打印机 </pattern>
+    <template>打印机 printer</template>
+  </category>
+  <category>
+    <pattern> * 打印机 </pattern>
+    <template>打印机 printer</template>
+  </category>
+  <category>
+    <pattern> 打印机 * </pattern>
+    <template>打印机 printer</template>
+  </category>
+
+</aiml>

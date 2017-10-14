@@ -1,0 +1,16 @@
+<aiml version="1.0">
+
+    <!-- This category works with the standard AIML Set -->
+    <category>
+        <pattern>LOAD AIML B</pattern>
+    <template>
+
+    <!-- Load device AIML set -->
+    <learn>aiml/software_problem/device.aiml</learn>
+
+
+
+    </template>
+    </category>
+
+</aiml>

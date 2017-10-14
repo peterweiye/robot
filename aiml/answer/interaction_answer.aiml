@@ -1,0 +1,175 @@
+<?xml version = "1.0.1" encoding = "utf-8"?>
+
+<aiml>
+
+  <category>
+    <pattern> * </pattern>
+    <template>null</template>
+  </category>
+
+
+  <category>
+    <pattern> * 成功 * </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern> * 成功  </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern>  成功 * </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern>  成功  </pattern>
+    <template>yes</template>
+  </category>
+
+  <category>
+    <pattern> * 没 问题 * </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern> * 没 问题  </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern>  没 问题 * </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern>  没 问题  </pattern>
+    <template>yes</template>
+  </category>
+
+
+   <category>
+    <pattern> * 正常 * </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern> * 正常  </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern>  正常 * </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern>  正常  </pattern>
+    <template>yes</template>
+  </category>
+
+  <category>
+    <pattern>  是的  </pattern>
+    <template>yes</template>
+  </category>
+
+  <category>
+    <pattern>  是  </pattern>
+    <template>yes</template>
+  </category>
+
+  <category>
+    <pattern> * 嗯 * </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern> * 嗯  </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern>  嗯 * </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern>  嗯  </pattern>
+    <template>yes</template>
+  </category>
+
+  <category>
+    <pattern> * 恩 * </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern> * 恩  </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern>  恩 * </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern>  恩  </pattern>
+    <template>yes</template>
+  </category>
+
+  <category>
+    <pattern> * OK * </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern> * OK  </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern>  OK * </pattern>
+    <template>yes</template>
+  </category>
+  <category>
+    <pattern>  OK  </pattern>
+    <template>yes</template>
+  </category>
+
+  <category>
+    <pattern> * 不是 * </pattern>
+    <template>no</template>
+  </category>
+  <category>
+    <pattern> * 不是  </pattern>
+    <template>no</template>
+  </category>
+  <category>
+    <pattern>  不是 * </pattern>
+    <template>no</template>
+  </category>
+  <category>
+    <pattern>  不是  </pattern>
+    <template>no</template>
+  </category>
+
+  <category>
+    <pattern> * no * </pattern>
+    <template>no</template>
+  </category>
+  <category>
+    <pattern> * no  </pattern>
+    <template>no</template>
+  </category>
+  <category>
+    <pattern>  no * </pattern>
+    <template>no</template>
+  </category>
+  <category>
+    <pattern>  no  </pattern>
+    <template>no</template>
+  </category>
+
+  <category>
+    <pattern> * 不 * </pattern>
+    <template>no</template>
+  </category>
+  <category>
+    <pattern> * 不  </pattern>
+    <template>no</template>
+  </category>
+  <category>
+    <pattern>  不 * </pattern>
+    <template>no</template>
+  </category>
+  <category>
+    <pattern>  不  </pattern>
+    <template>no</template>
+  </category>
+
+</aiml>

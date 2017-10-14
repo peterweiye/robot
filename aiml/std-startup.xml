@@ -1,23 +1,23 @@
 <aiml version="1.0">
 
-<!-- This category works with the standard AIML Set -->
-<category>
-<pattern>LOAD AIML B</pattern>
-<template>
+    <!-- This category works with the standard AIML Set -->
+    <category>
+        <pattern>LOAD AIML B</pattern>
+    <template>
 
-<!-- Load standard AIML set -->
-<learn>aiml/standard_zh/psy_chat.aiml</learn>
-<learn>aiml/standard_zh/basic_chat.aiml</learn>
-<learn>aiml/standard_zh/corpus.aiml</learn>
-<learn>aiml/standard_zh/owen.aiml</learn>
-<learn>aiml/standard_zh/new_answer.aiml</learn>
-<learn>aiml/standard_zh/test.aiml</learn>
-<learn>aiml/software_problem/software.aiml</learn>
+    <!-- Load standard AIML set -->
+    <learn>aiml/standard_zh/psy_chat.aiml</learn>
+    <learn>aiml/standard_zh/basic_chat.aiml</learn>
+    <learn>aiml/standard_zh/corpus.aiml</learn>
+    <learn>aiml/standard_zh/owen.aiml</learn>
+    <learn>aiml/standard_zh/new_answer.aiml</learn>
+    <learn>aiml/standard_zh/test.aiml</learn>
+    <learn>aiml/software_problem/software.aiml</learn>
 
-<!-- Load additional AIML set -->
-<learn>aiml/additional/computer.aiml</learn>
+    <!-- Load additional AIML set -->
+    <learn>aiml/additional/computer.aiml</learn>
 
-</template>
-</category>
+    </template>
+    </category>
 
 </aiml>

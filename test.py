@@ -1,69 +1,60 @@
 # -*- coding: utf-8 -*-
+from xml.etree import ElementTree
 
-# 文本分词
-import codecs
 import jieba
-from gensim.models.word2vec import LineSentence, Word2Vec
 
-def del_word_not_in_dictionary(list, model):
-    while '' in list:
-        list.remove('')
-    del_list = []
-    for word in list:
-        try:
-            model[word]
-        except KeyError:
-            del_list.append(word)
-    for w in del_list:
-        list.remove(w)
-    return list
+from bean.xml_parser import xml_parser
+import pandas as pd
 
-def get_sentence_similarity(list1, sentence2, model):
-    # 分词
-    list2 = list(jieba.cut(sentence2, cut_all=True))
-    # list去除空元素
-    while '' in list1:
-        list1.remove('')
-    while '' in list2:
-        list2.remove('')
-    list_sim = model.n_similarity(list1, list2)
-    return list_sim
+lst = []
+lst.append(2)
+print lst
+
+seg_list = jieba.cut("没问题的", cut_all=False)
+print " ".join(seg_list)
+
+lst = ['asas', 'as', 'asasasas']
+num_lst = [1,2,3,4]
+print (lst)
+
+seg_list = jieba.cut("打印机故障", cut_all=False)
+seg_list = " ".join(seg_list)
+if u'打印机' in seg_list:
+    seg_list = seg_list.replace(u'打印机', '')
+print seg_list
+
+parser = xml_parser()
+root = ElementTree.parse('problem_xml/problem_node.xml')
+lst_nodes = root.getiterator('printer')
+for node in lst_nodes:
+    for child in node.getchildren():
+        print child.tag, ":", child.text
+
+nodes = parser.read_node(device='printer', xml_path='problem_xml/problem_node.xml')
+print (nodes[0])
+
+device = 'printer'
+deviceMat = pd.read_csv('interaction_result/'+device+'.csv')
+
+print (deviceMat.columns)
+if (deviceMat[deviceMat[deviceMat.columns[0]].isin(['yes'])]['label'] == 'software').bool():
+    print ("as")
+print (deviceMat[deviceMat['node1'].isin(['yes'])]['label'] == 'software')
+
+
+device_name = '打印机 printer'
+lst = device_name.split(' ')
+device_en = lst[1]
+device_zh = lst[0]
+print (device_en, device_zh)
 
 
 
-i_file = open('./data/wrod2vec_train_data.txt')
-o_file = codecs.open('./data/tmp_data.txt', 'w', encoding='utf-8')
-sentence_list = []
-for line in i_file:
-    seg_list = jieba.cut(line, cut_all=True)
-    tmp = " ".join(seg_list)
-    o_file.write(tmp)
-o_file.close()
-# 训练模型
-# logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-model = Word2Vec(LineSentence('./data/tmp_data.txt'), min_count=1, window=5)
-sentence_obama = '鸭蛋瓦塔丝袜放射科的eRad登记工作站中，我点那个申请单按钮的时候，出错了，屏幕显示，需要启动视频设备'
-sentence_president = '放射科的eRad登记工作站中点申请单按钮显示：请启动视频设备'
-sentence3 = '对于一些医生误删掉病程记录的'
-list1 = list(jieba.cut(sentence_obama, cut_all=True))
-list2 = list(jieba.cut(sentence_president, cut_all=True))
-list3 = list(jieba.cut(sentence3,cut_all=True))
-distance1 = model.wmdistance(list1, list2)
-distance2 = model.wmdistance(list2, list3)
-print (distance1)
-print (distance2)
-del_word_not_in_dictionary(list2, model)
-clean_list = del_word_not_in_dictionary(list=list1, model=model)
-sim = get_sentence_similarity(list1=clean_list, sentence2='虚拟机死机，操作不了的', model=model)
-print (sim)
-# tmp_file = open('./data/train_data.txt')
-# for line in tmp_file:
-#     line = line.strip('\n')
-#     lst = list(jieba.cut(line, cut_all=True))
-#     while '' in lst:
-#         lst.remove('')
-#     print ('list1:{0}'.format(lst).decode('utf-8'))
-#     print ('list2:{0}'.format(list1).decode('utf-8'))
-#     print ('distance:{0}'.format(model.wmdistance(lst, list2)))
+
+
+
+
+
+
 
 
