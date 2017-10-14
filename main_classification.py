@@ -71,7 +71,6 @@ def match_typical_problems(message, device_name):
             cut_message.replace(device_name, '')
     # 打标签
     tag_message = device_name + ' ' + message
-    print (tag_message)
     # 匹配典型问题
     label = typical_problems_kernel.respond(tag_message)
     if label == 'null':
@@ -94,7 +93,6 @@ def user_interaction(device):
     for ans in lst_answer:
         deviceMat = deviceMat[deviceMat[columns[index]].isin([ans])]
         index += 1
-    print (deviceMat['label'])
     if (deviceMat['label'] == 'software').bool():
         return 'software'
     else:
@@ -132,7 +130,6 @@ while True:
             # 匹配典型故障
             bool_result, label = match_typical_problems(word_segmentation(message),
                                                         device_name_zh)
-            print (u"匹配典型问题: ", bool_result, label)
             if bool_result:
                 order = work_order(device=device_name_zh, description=' ',
                                    classification=label)
